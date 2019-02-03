@@ -1,3 +1,6 @@
 <p>
   cars-list works!
 </p>
+<ul>
+  <li *ngFor="let car of cars | async" (click)="selectCar(car.id)">{{car.id}}</li>
+</ul>

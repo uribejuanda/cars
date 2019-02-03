@@ -1,7 +1,4 @@
 {
-  "total_count": 9905,
-  "total_count_formatted": "9,905",
-  "hits_count": 20,
   "records": [
     {
       "id": 142961684,
@@ -2128,17 +2125,5 @@
       "listimate_category": "average",
       "listimate_text": "\u0026lt;span class=\u0026#39;popover-close\u0026#39;\u0026gt;\u0026lt;/span\u0026gt;Compared to similar Nissan Maxima listings, this vehicle is priced \u0026lt;b\u0026gt;5% less\u0026lt;/b\u0026gt;."
     }
-  ],
-  "promoted_aggregations": [],
-  "jumpstart_info": {
-    "mak": null,
-    "mod": null,
-    "style": null,
-    "type": null,
-    "fuel": null,
-    "yr": null,
-    "jam_unit": "/36117602/jam.alst.new.dfp/lssrp/ct",
-    "pub": "ALST",
-    "unit": "/2909/alst.new.dfp/lssrp/ct"
-  }
+  ]
 }
