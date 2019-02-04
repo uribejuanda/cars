@@ -1,6 +1,7 @@
-<p>
-  cars-list works!
-</p>
-<ul>
-  <li *ngFor="let car of cars | async" (click)="selectCar(car.id)">{{car.id}}</li>
-</ul>
+<div class="row">
+  <app-car-card class="col-12 col-md-6 col-lg-4 col-xl-3"
+    *ngFor="let car of cars | async | slice:0:20"
+    (click)="selectCar(car.vehicleId)"
+    [car]=car>
+  </app-car-card>
+</div>

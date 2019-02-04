@@ -1,0 +1,12 @@
+.car-card {
+  margin-bottom: 15px;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.card {
+  /* the other rules */
+  transition: box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 10px 10px 0px rgba(0,0,0,0.5);
+}

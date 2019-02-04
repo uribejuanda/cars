@@ -1,3 +1,16 @@
-<p>
-  car-card works!
-</p>
+<div class="card text-center car-card">
+  <img class="card-img-top" [src]=car.imageUrl [alt]=car.model>
+  <div class="card-body">
+
+    <h5 class="card-title">{{car.make}} - {{car.model}}</h5>
+    <p class="card-text">
+      <span class="badge badge-info">{{car.year}}</span>
+      <small class="text-muted"> - {{car.trim}}</small>
+    </p>
+
+  </div>
+  <div class="card-footer d-flex justify-content-between">
+    <a [routerLink]="['/details/', car.vehicleId]" class="btn btn-outline-info">Check it!</a>
+    <h4 class="d-inline-block">{{car.price.total | currency : 'USD' : 'symbol' : '1.0'}}</h4>
+  </div>
+</div>

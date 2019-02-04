@@ -1,9 +1,11 @@
 export interface Car {
-  id: number;
+  vehicleId: number;
   year: number;
   make: string;
   model: string;
-  price: number;
-  primary_photo_url: string;
-  photo_urls: any;
+  trim: string;
+  price: {
+    total: number
+  };
+  imageUrl: string;
 }

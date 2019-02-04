@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators/map';
+import { Cars } from '../../models/cars.model';
 
 @Injectable()
 export class CarsService {
@@ -10,16 +11,14 @@ export class CarsService {
   getCars() {
     return this.http.get('./assets/data.json')
       .pipe(
-        map(res => res.records)
+        map((res: Cars) => res.vehicles)
       );
   }
 
   getCar(id: number) {
-    console.log(id);
     return this.getCars().pipe(
       map(data => data.find((car) => {
-        console.log(car.id);
-        return car.id === id;
+        return car.vehicleId === id;
       }))
     );
   }
