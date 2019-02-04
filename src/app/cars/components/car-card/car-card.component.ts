@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Car } from '../../../models/car.model';
 
 @Component({
@@ -9,10 +9,16 @@ import { Car } from '../../../models/car.model';
 export class CarCardComponent implements OnInit {
 
   @Input() car: Car;
+  @Input() disableCompare: boolean;
+  @Output() compared = new EventEmitter<null>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  compare() {
+    this.compared.emit();
   }
 
 }

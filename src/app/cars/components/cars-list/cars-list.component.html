@@ -1,7 +1,9 @@
 <div class="row">
+  <app-compare-dock class="col-12"></app-compare-dock>
   <app-car-card class="col-12 col-md-6 col-lg-4 col-xl-3"
     *ngFor="let car of cars | async | slice:0:20"
-    (click)="selectCar(car.vehicleId)"
-    [car]=car>
+    [car]=car
+    (compared)="addToCompare(car)"
+    [disableCompare]="disableCompare">
   </app-car-card>
 </div>

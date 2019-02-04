@@ -11,6 +11,9 @@ import { CarDetailsComponent } from './cars/components/car-details/car-details.c
 import { CarCardComponent } from './cars/components/car-card/car-card.component';
 
 import { CarsService } from './cars/services/cars.service';
+import { CompareCarsComponent } from './cars/components/compare-cars/compare-cars.component';
+import { CarCardDetailedComponent } from './cars/components/car-card-detailed/car-card-detailed.component';
+import { CompareDockComponent } from './cars/components/compare-dock/compare-dock.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { CarsService } from './cars/services/cars.service';
     CarsListComponent,
     CarDetailsComponent,
     CarCardComponent,
+    CompareCarsComponent,
+    CarCardDetailedComponent,
+    CompareDockComponent,
   ],
   imports: [
     BrowserModule,

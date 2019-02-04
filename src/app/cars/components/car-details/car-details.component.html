@@ -10,17 +10,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="car">
-  <div class="col-12 col-sm-6">
-    <img [src]=car.imageUrl [alt]=car?.model>
-  </div>
-  <div class="col-12 col-sm-6">
-    <div>id: {{car.vehicleId}}</div>
-    <div>model: {{car.model}}</div>
-    <div>year: {{car.year}}</div>
-    <div>Make: {{car.make}}</div>
-    <div>Price: {{car.price}}</div>
-
-  </div>
+<div *ngIf="car">
+  <app-car-card-detailed [car]="car"></app-car-card-detailed>
 </div>
 

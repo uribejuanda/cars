@@ -1,0 +1,14 @@
+<div class="collapse mb-2" [class.show]="comparedElements.length > 0" id="collapseExample">
+  <div class="card-group">
+    <div class="card m-0" *ngFor="let carToCompare of comparedElements">
+      <div class="card-body p-2">
+        <button type="button" class="close float-right" aria-label="Close" (click)="removeCarFromCompare(carToCompare)">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="card-title">{{carToCompare.make}} - {{carToCompare.model}} </h5>
+        <p class="card-text">{{carToCompare.year}} {{carToCompare.trim}}</p>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-info" *ngIf="comparedElements.length > 1" (click)="goToCompare()">Compare</button>
+  </div>
+</div>

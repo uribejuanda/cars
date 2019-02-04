@@ -8,4 +8,6 @@ export interface Car {
     total: number
   };
   imageUrl: string;
+  ext_TileColorName: string;
+  int_TileColorName: string;
 }

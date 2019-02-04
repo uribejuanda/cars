@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12" [class.col-lg-6]="!singleColumn">
+    <img [src]=car.imageUrl [alt]=car.model width="100%" class="rounded">
+  </div>
+  <div class="col-12" [class.col-lg-6]="!singleColumn">
+    <div class="jumbotron">
+      <h4 class="display-6">{{car.year}} {{car.make}} - {{car.model}}</h4>
+      <p class="lead">{{car.trim}}</p>
+      <hr class="my-4">
+      <table class="table table-striped">
+        <tr>
+          <th scope="row">Color</th>
+          <td>{{car.ext_TileColorName}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Interior</th>
+          <td>{{car.int_TileColorName}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Price</th>
+          <td>{{car.price.total | currency : 'USD' : 'symbol' : '1.0'}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

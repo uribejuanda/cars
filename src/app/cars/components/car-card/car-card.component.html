@@ -1,12 +1,15 @@
 <div class="card text-center car-card">
   <img class="card-img-top" [src]=car.imageUrl [alt]=car.model>
   <div class="card-body">
-
     <h5 class="card-title">{{car.make}} - {{car.model}}</h5>
     <p class="card-text">
       <span class="badge badge-info">{{car.year}}</span>
       <small class="text-muted"> - {{car.trim}}</small>
     </p>
+    <div class="float-right">
+      <button class="btn btn-outline-info btn-sm" (click)="compare()" [disabled]="disableCompare">Compare</button>
+    </div>
+
 
   </div>
   <div class="card-footer d-flex justify-content-between">
